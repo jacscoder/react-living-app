@@ -17,25 +17,25 @@ let buttons_container = {
 }
 
 let details_button = {
-	height: '38px',
-    padding: '0 15px',
-    textAlign: 'center',
-    fontSize: '11px',
-    fontWeight: '600',
-    lineHeight: '38px',
-    letterSpacing: '.1rem',
-    textTransform: 'uppercase',
-    textDecoration: 'none',
-    whiteSpace: 'nowrap',
-    borderRadius: '4px',
-    border: '1px solid #bbb',
-    cursor: 'pointer',
-    boxSizing: 'border-box',
-    display: 'inline-block',
-    color: '#ea4c88',
-    backgroundColor: '#FFF',
-    borderColor: '#FFF',
-    margin: '0 10px'
+  height: '38px',
+  padding: '0 15px',
+  textAlign: 'center',
+  fontSize: '11px',
+  fontWeight: '600',
+  lineHeight: '38px',
+  letterSpacing: '.1rem',
+  textTransform: 'uppercase',
+  textDecoration: 'none',
+  whiteSpace: 'nowrap',
+  borderRadius: '4px',
+  border: '1px solid #bbb',
+  cursor: 'pointer',
+  boxSizing: 'border-box',
+  display: 'inline-block',
+  color: '#ea4c88',
+  backgroundColor: '#FFF',
+  borderColor: '#FFF',
+  margin: '0 10px'
 }
 
 class WelcomeComponent extends React.Component {
@@ -50,8 +50,8 @@ class WelcomeComponent extends React.Component {
 	}
 
 	openDetails () {
-		this.setState({	
-			openDetails: true 
+		this.setState({
+			openDetails: true
 		});
 	}
 
@@ -68,7 +68,7 @@ class WelcomeComponent extends React.Component {
 					<div>
 						<div className='welcome-block'>
 							<img src={logo} className='welcome-logo' alt='logo' />
-							<h3 className='welcome-intro'>citii.<span style={primary_color}>io</span></h3>
+							<h3 className='welcome-intro'>Jacs citii.<span style={primary_color}>io</span></h3>
 							<p className='welcome-description'> Ever thought how far your current salary will go in another city?
 							This simple app will calculate how much more (or less) you would need in order
 							to maintain the same standard of living in another city!
@@ -82,7 +82,7 @@ class WelcomeComponent extends React.Component {
 					<FooterComponent />
 				</div>}
 				{(this.state.openDetails) && <WelcomeDetailsComponent closeDetails={this.closeDetails}/>}
-			</div>	
+			</div>
 		);
 	}
 }
