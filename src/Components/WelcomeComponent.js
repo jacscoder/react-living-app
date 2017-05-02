@@ -32,7 +32,7 @@ let details_button = {
     cursor: 'pointer',
     boxSizing: 'border-box',
     display: 'inline-block',
-    color: '#ea4c88',
+    color: 'black',
     backgroundColor: '#FFF',
     borderColor: '#FFF',
     margin: '0 10px'
@@ -50,8 +50,8 @@ class WelcomeComponent extends React.Component {
 	}
 
 	openDetails () {
-		this.setState({	
-			openDetails: true 
+		this.setState({
+			openDetails: true
 		});
 	}
 
@@ -82,7 +82,7 @@ class WelcomeComponent extends React.Component {
 					<FooterComponent />
 				</div>}
 				{(this.state.openDetails) && <WelcomeDetailsComponent closeDetails={this.closeDetails}/>}
-			</div>	
+			</div>
 		);
 	}
 }
